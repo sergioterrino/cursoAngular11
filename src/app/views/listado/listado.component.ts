@@ -14,21 +14,25 @@ export class ListadoComponent implements OnInit{
     this.listadoEntradas = [
       {
         titulo: 'Introducción a Angular',
-        resumen: 'En esta lección realizaremos una pequeña introducción a este framework'
+        resumen: 'En esta lección realizaremos una pequeña introducción al mundo del desarrollo con Angular'
       },
       {
         titulo: 'Typescript como lenguaje para Angular',
-        resumen: 'Breve recorrido por el lenguaje de Typescript como base'
+        resumen: 'Breve recorrido por el lenguaje de Typescript como base para desarrollar con Angular'
       },
       {
         titulo: 'Componenentes en Angular',
-        resumen: 'Aprenderemos a usar los componentes en Angular y el p'
+        resumen: 'Aprenderemos a usar los componentes en Angular y el porqué de su importancia'
       }
     ];
   }
 
   ngOnInit(): void {
 
+  }
+
+  public mostrarTitulo(titulo: string){
+    alert(`Entrada seleccionada: ${ titulo }.`);
   }
 
 }
